@@ -15,9 +15,18 @@ body {
 }
 */
 
+.input-field input {
+        border-bottom: 1px solid #FFFFFF !important;
+        box-shadow: 0 1px 0 0 #6AB8EB !important;
+}
+
+.input-field label {
+    color: rgba(255,255,255,0.5);
+}
+
 .main {
 /*    margin-left: 300px;*/
-    position: absolute; top: 0; bottom: 0; left: 300px;
+    position: absolute; top: 0; bottom: 0; left: 300px; right: 0;
 }
 
 .nav-wrapper:hover {
@@ -143,11 +152,11 @@ body {
 }
 
 .btn {
-    background-color: #2F688D;
+    background-color: #6AB8EB;
 }
 
 .btn:hover {
-    background-color: #6AB8EB;
+    background-color: #2F688D;
 }
 
 #recordList a.collection-item {

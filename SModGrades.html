@@ -20,7 +20,7 @@
                 <a href="#!email"><span class="white-text email">Administrator</span></a>
             </div>
         </li>
-        <li ><a href="#!">Home</a></li>
+        <li><a class="disabled" href="#!">Home</a></li>
         <li><a href="#!">Applicants</a></li>
         <li><a href="#!">Teachers</a></li>
         <li class="no-padding">
@@ -29,7 +29,7 @@
                     <a class="collapsible-header">Students<i class="material-icons">arrow_drop_down</i></a>
                     <div class="collapsible-body">
                         <ul>
-                            <li><a href="SModGrades.html">Modify Grades</a></li>
+                            <li><a href="#!">Modify Grades</a></li>
                             <li><a href="#!">Change Section</a></li>
                             <li><a href="#!">Add or Remove Courses</a></li>
                             <li><a href="#!">Edit Student</a></li>
@@ -56,12 +56,69 @@
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
-    <div class="main valign-wrapper white-text">
-        <div style="padding-left: 15px">
-            <h2>Select an action from the side bar</h2>
-            <div class="progress">
-                <div class="indeterminate"></div>
-            </div>
+    <div class="main white-text" style="padding-left: 20px;">
+        <h4>Edit Student Grade</h4>
+        <div class="row">
+            <form class="col s12" style="color:white;">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="password" type="text" class="validate">
+                        <label for="password">Roll Number</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input id="email" type="text" class="validate">
+                        <label for="email">Semester</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+        <div>
+            <br/>
+            <table class="bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Programming</td>
+                        <td>A+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <div class="row">
+            <form class="col s12" style="color:white;">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="password" type="text" class="validate">
+                        <label for="password">Roll Number</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="password" type="text" class="validate">
+                        <label for="password">Course</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="email" type="text" class="validate">
+                        <label for="email">Grade</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Update
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
         </div>
     </div>
 
