@@ -8,6 +8,9 @@ body {
     margin: 0;
 }
 
+h4 {
+    font-family: "Roboto Light"
+}
 
 /*
 .dropdown-button {
@@ -21,6 +24,14 @@ body {
 }
 
 .input-field label {
+    color: rgba(255,255,255,0.5);
+}
+
+[type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after {
+    border: 2px solid #FFF;
+}
+
+label {
     color: rgba(255,255,255,0.5);
 }
 

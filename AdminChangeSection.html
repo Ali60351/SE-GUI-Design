@@ -5,28 +5,21 @@
     <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="material-icons.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> </head>
 
 <body>
     <ul id="slide-out" class="side-nav fixed">
         <li>
             <div class="user-view">
-                <div class="background">
-                    <img src="images/header.jpg">
-                </div>
-                <a href="#!user"><img class="circle" src="images/logo.png"></a>
-                <a href="#!name"><span class="white-text name">Uzair Abid</span></a>
-                <a href="#!email"><span class="white-text email">Administrator</span></a>
-            </div>
+                <div class="background"> <img src="images/header.jpg"> </div>
+                <a href="#!user"><img class="circle" src="images/logo.png"></a> <a href="#!name"><span class="white-text name">Uzair Abid</span></a> <a href="#!email"><span class="white-text email">Administrator</span></a> </div>
         </li>
         <li><a class="disabled" href="#!">Home</a></li>
         <li><a href="#!">Applicants</a></li>
         <li><a href="#!">Teachers</a></li>
         <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
-                <li>
-                    <a class="collapsible-header">Students<i class="material-icons">arrow_drop_down</i></a>
+                <li> <a class="collapsible-header">Students<i class="material-icons">arrow_drop_down</i></a>
                     <div class="collapsible-body">
                         <ul>
                             <li><a href="#!">Modify Grades</a></li>
@@ -40,11 +33,9 @@
         </li>
         <li><a href="#!">Contact</a></li>
         <li><a href="#!">Forums</a></li>
-    </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
+    </ul> <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     <div class="main white-text" style="padding-left: 20px;">
-        <h4>Edit Student Grade</h4>
+        <h4>Add or Remove Courses</h4>
         <div class="row">
             <form class="col s12" style="color:white;">
                 <div class="row">
@@ -52,15 +43,12 @@
                         <input id="password" type="text" class="validate">
                         <label for="password">Roll Number</label>
                     </div>
-
                     <div class="input-field col s6">
                         <input id="email" type="text" class="validate">
                         <label for="email">Semester</label>
                     </div>
                 </div>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                </button>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit <i class="material-icons right">send</i> </button>
             </form>
         </div>
         <div>
@@ -69,47 +57,40 @@
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Grade</th>
+                        <th>Section</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
                         <td>Computer Networks</td>
-                        <td>F</td>
+                        <td>A</td>
                     </tr>
                     <tr>
                         <td>Advanced Programming</td>
-                        <td>A+</td>
+                        <td>B</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <br/>
+        <br/>
         <div class="row">
             <form class="col s12" style="color:white;">
+                <p>Modify Section</p>
                 <div class="row">
-                    <div class="input-field col s4">
-                        <input id="password" type="text" class="validate">
-                        <label for="password">Roll Number</label>
+                    <div class="input-field col s6">
+                        <input id="course" type="text" class="validate">
+                        <label for="course">Course</label>
                     </div>
-                    <div class="input-field col s4">
-                        <input id="password" type="text" class="validate">
-                        <label for="password">Course</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="email" type="text" class="validate">
-                        <label for="email">Grade</label>
+                    <div class="input-field col s6">
+                        <input id="select" type="text" class="validate">
+                        <label for="select">Section</label>
                     </div>
                 </div>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Update
-                    <i class="material-icons right">send</i>
-                </button>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Update <i class="material-icons right">send</i> </button>
             </form>
         </div>
     </div>
-
-
     <script type="text/javascript" src="./jquery.min.js"></script>
     <script type="text/javascript" src="./hammer.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -118,6 +99,9 @@
         $(".button-collapse").sideNav();
         // Initialize collapsible (uncomment the line below if you use the dropdown variation)
         $('.collapsible').collapsible();
+        $(document).ready(function () {
+            $('select').material_select();
+        });
     </script>
 </body>
 
