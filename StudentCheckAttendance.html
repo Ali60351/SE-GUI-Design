@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="material-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> </head>
+
+<body>
+    <ul id="slide-out" class="side-nav fixed">
+        <li>
+            <div class="user-view">
+                <div class="background"> <img src="images/header.jpg"> </div>
+                <a href="#!user"><img class="circle" src="images/logo.png"></a> <a href="#!name"><span class="white-text name">Project Anton</span></a> <a href="#!email"><span class="white-text email">Student Dashboard</span></a> </div>
+        </li>
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">Register Courses</a></li>
+        <li><a href="#!">Check Attendance</a></li>
+        <li><a href="#!">Check Grades</a></li>
+        <li><a href="#!">Fee Status</a></li>
+    </ul> <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <div class="main white-text" style="padding-left: 20px;">
+        <h4>Check Attendance</h4>
+        <div class="row">
+            <form class="col s12" style="color:white;">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="password" type="text" class="validate">
+                        <label for="password">Roll Number</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="password" type="text" class="validate">
+                        <label for="password">Semester</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit <i class="material-icons right">send</i> </button>
+            </form>
+        </div>
+        <div>
+            <br/>
+            <table class="bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Credit Hours</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>3</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Programming</td>
+                        <td>3</td>
+                        <td>80%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <br/>
+    </div>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./hammer.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        // Initialize collapse button
+        $(".button-collapse").sideNav();
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        $('.collapsible').collapsible();
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+</body>
+
+</html>
